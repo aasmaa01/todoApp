@@ -12,7 +12,13 @@
         <div class="todo-app">
             <h2>To-Do List <img src="images/icons8-a-faire-50.png" alt=""></h2>
             <div class="row">
-                <input type="text" id="input-box" placeholder="add your task">
+                <input
+                  type="text"
+                  id="input-box"
+                  placeholder="Add your task"
+                  onkeydown="if(event.key === 'Enter'){addTask();}"
+                />
+
                 <button onclick="addTask()">Add</button>
             </div>
             <ul id="list-container"><!--
